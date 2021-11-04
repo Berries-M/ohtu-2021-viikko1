@@ -99,5 +99,5 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(5)
         
         # Varasto Stringinä tuoimii oikein
-        self.assertAlmostEqual(str(self.varasto), "saldo = 5, vielä tilaa 5")
+        self.assertAlmostEqual(str(self.varasto), "saldo = 5, vielä tilaa 6")
 
