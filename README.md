@@ -1,1 +1,1 @@
-# ohtu-2021-viikko1
+# Ohtu 2021 viikko1
