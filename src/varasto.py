@@ -5,10 +5,10 @@ class Varasto:
         else:
             # virheellinen, nollataan
             self.tilavuus = 0.0
-        # voiko vain poistaa? if alku_saldo < 0.0:
+        if alku_saldo < 0.0:
             # virheellinen, nollataan
-        # voiko vain poistaa?    self.saldo = 0.0
-        if alku_saldo <= tilavuus: #elif vaihdettu if
+            self.saldo = 0.0
+        elif alku_saldo <= tilavuus:
             # mahtuu
             self.saldo = alku_saldo
         else:
