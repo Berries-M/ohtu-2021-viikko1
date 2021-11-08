@@ -1,10 +1,6 @@
 class Varasto:
-    def __init__(self, tilavuus, alku_saldo = 0): #Tämä liian monimutkainen, miten korjattava?
-        if tilavuus > 0.0:
-            self.tilavuus = tilavuus
-        else:
-            # virheellinen, nollataan
-            self.tilavuus = 0.0
+    def __init__(self, tilavuus, alku_saldo = 0):
+        self.tilavuus = max(tilavuus, 0.0) #Tällä poistettu monimutkaisuus
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
